@@ -34,19 +34,17 @@ public class Rettangolo {
         return (this.altezza * this.larghezza);
     }
 
-    public String stampaRettangolo(){
-        System.out.println("L'altezza è :" + this.getAltezza());
-        System.out.println("La larghezza è :" + this.getLarghezza());
-        System.out.println("Il perimetro è :" + this.getPerimetro());
-        System.out.println("L'area è :" + this.getArea());
+    public static void stampaRettangolo(Rettangolo rettangolo){
+        System.out.println(rettangolo.getPerimetro());
+        System.out.println(rettangolo.getArea());
     }
 
-    @Override
-    public String toString() {
-        return "Rettangolo{" +
-                ", altezza='" + getAltezza() + "\n" +
-                "La larghezza è :" + getLarghezza() + "\n" +
-                "Il perimetro è :" + getPerimetro() + "\n" +
-                "L'area è :" + getArea();
-    }
+//    public String stampaDueRettangoli(Rettangolo rettangolo1, Rettangolo rettangolo2){
+//        double perTot = rettangolo1.getPerimetro() + rettangolo2.getPerimetro();
+//        double areaTot = rettangolo1.getArea() + rettangolo2.getArea();
+//        return stampaRettangolo(rettangolo1);
+//        return stampaRettangolo(rettangolo2);
+//        return perTot;
+//        return areaTot;
+//    }
 }
