@@ -25,6 +25,7 @@ public class Rettangolo {
         this.altezza = altezza;
         this.larghezza = larghezza;
     }
+
     //METHODS
     public double getPerimetro(){
         return (this.altezza + this.larghezza) * 2;
@@ -38,13 +39,4 @@ public class Rettangolo {
         System.out.println(rettangolo.getPerimetro());
         System.out.println(rettangolo.getArea());
     }
-
-//    public String stampaDueRettangoli(Rettangolo rettangolo1, Rettangolo rettangolo2){
-//        double perTot = rettangolo1.getPerimetro() + rettangolo2.getPerimetro();
-//        double areaTot = rettangolo1.getArea() + rettangolo2.getArea();
-//        return stampaRettangolo(rettangolo1);
-//        return stampaRettangolo(rettangolo2);
-//        return perTot;
-//        return areaTot;
-//    }
 }
